@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="formatsheet.css">
 </head>
 <body>
-    <h3>To check: variable and function got memory allocation before execution</h3>
+    <h3>To check: function GEC(global execution context)</h3>
     
 </body>
 <script>
-    // To check: variable and function got memory allocation before execution
+    // To check: function GEC(global execution context)
+    var x=1;
+    a();
+    b();
     console.log(x);
-    var x=7;
-
-    console.log(fun);
-	function fun(){ 
-		console.log("Function is hoistedyy");
-	}
+    function a(){
+        var x=10;
+        console.log(x);
+    }
+    function b(){
+        var x=100;
+        console.log(x);
+    }
 
 </script>
 

@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="formatsheet.css">
 </head>
 <body>
-    <h3>To check: variable and function got memory allocation before execution</h3>
+    <h3>To check: Window globle object</h3>
     
 </body>
 <script>
-    // To check: variable and function got memory allocation before execution
-    console.log(x);
-    var x=7;
+    // To check: Window globle object
+    var a=10;
+    function b(){
+        var x=10;
+    }
 
-    console.log(fun);
-	function fun(){ 
-		console.log("Function is hoistedyy");
-	}
+    console.log(a);
+    console.log(window.a);
+    console.log(this.a);
+
+
 
 </script>
 
