@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="formatsheet.css">
 </head>
 <body>
-    <h3>To check: variable and function got memory allocation before execution</h3>
+    <h3>To check: lexical environment </h3>
     
 </body>
 <script>
-    // To check: variable and function got memory allocation before execution
-    console.log(x);
-    var x=7;
+    // To check: lexical environment 
 
-    console.log(fun);
-	function fun(){ 
-		console.log("Function is hoistedyy");
-	}
+    function parent_a(){
+    var b=10;
+    c();
+    function c(){
+        console.log(b);
+    }
+}
+
+ var b=15;
+parent_a();
 
 </script>
 
