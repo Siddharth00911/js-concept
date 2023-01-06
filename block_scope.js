@@ -32,3 +32,14 @@
 //     console.log(b);
 // }
 // console.log(b);
+
+///////////////////////////////////
+//var do not take care of block-space
+
+// var a=10;
+// {
+//     var a=1000;
+//     console.log(a);
+// }
+
+// console.log(a);
