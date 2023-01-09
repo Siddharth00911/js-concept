@@ -133,23 +133,48 @@
 // 4. it help in data hiding and encapsulations
 
 
-// data hinding/encapsulations-> hiding some-functions/variables in programs
-// eg.1
+// // data hinding/encapsulations-> hiding some-functions/variables in programs
+// // eg.1 DH using contructor
 
-function Counter(){
-    let count=1;
-    this.ICounter = function(){
-        count++;
-        console.log(count);
-    }
-    this.DCounter = function(){
-        count--;
-        console.log(count);
-    }
-}
+// function Counter(){
+//     let count=1;
+//     this.ICounter = function(){
+//         count++;
+//         console.log(count);
+//     }
+//     this.DCounter = function(){
+//         count--;
+//         console.log(count);
+//     }
+// }
 
-let counter1 = new Counter();
+// let counter1 = new Counter();
 
-counter1.ICounter();
-counter1.ICounter();
-counter1.DCounter();
+// counter1.ICounter();
+// counter1.ICounter();
+// counter1.DCounter();
+
+
+// Closures and garbage collector realtion
+
+// function a(){
+//     var x=5;
+//     return function b(){
+//         console.log(x);
+//     }
+// }
+
+// a();
+
+// // smartly collected garbage variable
+
+// function a(){
+//     var x=5, z=10;                                  //z -> smartly collected garbage variable
+//     return function b(){
+//         console.log(x);
+//     }
+// }
+
+// var y= a();
+// //...
+// y();
