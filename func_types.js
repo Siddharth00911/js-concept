@@ -48,7 +48,7 @@ function name1(){
 }
 
 function greet(name1){
-    console.log("Hello, "  + name1());
+    console.log("Hello, "  + name1);
 }
 
 greet(name1);
