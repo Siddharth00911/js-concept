@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listener Page</title>
+</head>
+<body>
+<!--     
+    //////////////////////////////////////////////////////////////////////////////////
+    //Event Listeners
+    // ->
+    
+    //Closures with el
+    
+    //scope with el
+    
+    //Garbage collection & removeEventListener(REL)  -->
+
+    <h2>Event listener Page</h2>
+    <button id="clickB">Click Button</button>
+
+    <script>
+
+function get_button_count(){
+    let count=0;
+document.getElementById("clickB").addEventListener("click", function  xyz(){                    //data hiding done by using closure
+    console.log("YOU HAVE PRESSED BUTTON", count++);
+})
+}
+
+get_button_count();
+    </script>
+</body>
+</html>

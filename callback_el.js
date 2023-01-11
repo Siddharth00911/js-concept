@@ -1,13 +1,14 @@
 // Callback functions
-function name1(){
-    return "siddharth";
+// sync JS -----> Async JS code by callback func
+
+setTimeout(function (){console.log("Timer-5")}, 5000);
+function x(y){
+    console.log('X called');
+    y();
 }
 
-function greet(name1){
-    console.log("hello, " + name1);
-}
+x(function y(){ console.log('Y called');});
 
-greet(name1);
 
 
 
@@ -17,13 +18,5 @@ greet(name1);
 
 //Power of callback?
 
-//////////////////////////////////////////////////////////////////////////////////
-//Event Listeners
-// ->
 
-//Closures with el
-
-//scope with el
-
-//Garbage collection & remove el
 
