@@ -1,4 +1,4 @@
-//to find largest number
+//array operations
 
 let arr=[1,4,6, 8, 2, 3, 5, 7, 9];
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert kms to miles
+    </title>
+    <script>
+        function convert(){
+            let kms= document.getElementById('in').value;
+            const m=0.621371;
+            let mile=kms*m;
+            document.getElementById('result').innerText = `miles= ${mile}`;
+        }
+
+    </script>
+</head>
+<body>
+    <h3>//convert kms to miles    </h3>
+    <input type="number" id="in">kms
+    <br/>
+    <br/>
+    <button onclick="convert()">CONVERT</button>
+    <br/>
+    <p id="result"></p>
+    
+</body>
+</html>
