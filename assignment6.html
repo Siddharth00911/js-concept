@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert C to F</title>
+    <script>
+       function pressB(){
+        let C= document.getElementById('in').value;
+        let F= (C + 1.8) + 32;
+        document.getElementById('result').innerText = `${C}C = ${F}F`;
+       }
+    </script>
+</head>
+<body>
+    <h3>convert Celsius to Fahrenheit</h3>
+    <br/>
+    <input type="number" id="in" > Celsius </input>
+    <br/>
+    <br/>
+    <button onclick="pressB()">CONVERT</button>
+    <br/>
+    <p id="result"></p>
+    
+    
+</body>
+</html>
